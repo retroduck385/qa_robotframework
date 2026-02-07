@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.9.6 on darwin)" generated="2026-02-07T14:19:46.421532" rpa="false" schemaversion="5">
+<suite id="s1" name="Webpage Testcases" source="/Users/joshdenzelng/Documents/Github Files/qa_robotframework/webpage_testcases.robot">
+<test id="s1-t1" name="Valid Login" line="6">
+<kw name="Open browser to login page" owner="loginPage">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-07T14:19:46.559963" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:7272/'.</msg>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-07T14:19:46.559803" elapsed="1.772440"/>
+</kw>
+<status status="PASS" start="2026-02-07T14:19:46.559264" elapsed="1.773276"/>
+</kw>
+<kw name="Input username" owner="loginPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-07T14:19:48.334167" level="INFO">Typing text 'demo' into text field 'username_field'.</msg>
+<arg>username_field</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-07T14:19:48.333290" elapsed="0.205949"/>
+</kw>
+<arg>demo</arg>
+<status status="PASS" start="2026-02-07T14:19:48.332985" elapsed="0.206622"/>
+</kw>
+<kw name="Input password" owner="loginPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-07T14:19:48.540620" level="INFO">Typing text 'mode' into text field 'password_field'.</msg>
+<arg>password_field</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-07T14:19:48.540400" elapsed="0.063524"/>
+</kw>
+<arg>mode</arg>
+<status status="PASS" start="2026-02-07T14:19:48.540144" elapsed="0.063908"/>
+</kw>
+<kw name="Submit credentials" owner="loginPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-07T14:19:48.604657" level="INFO">Clicking button 'login_button'.</msg>
+<arg>login_button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-07T14:19:48.604512" elapsed="0.161720"/>
+</kw>
+<status status="PASS" start="2026-02-07T14:19:48.604296" elapsed="0.162070"/>
+</kw>
+<kw name="Welcome page should be open" owner="loginPage">
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2026-02-07T14:19:48.772052" level="INFO">Current location is 'http://localhost:7272/welcome.html'.</msg>
+<arg>${WELCOME URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2026-02-07T14:19:48.767914" elapsed="0.004231"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-02-07T14:19:48.776541" level="INFO">Page title is 'Welcome Page'.</msg>
+<arg>Welcome Page</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-02-07T14:19:48.772299" elapsed="0.004380"/>
+</kw>
+<status status="PASS" start="2026-02-07T14:19:48.766945" elapsed="0.009824"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-07T14:19:48.777104" elapsed="0.072647"/>
+</kw>
+<status status="PASS" start="2026-02-07T14:19:46.558834" elapsed="2.291034"/>
+</test>
+<doc>A test suite with a single test for valid login.</doc>
+<status status="PASS" start="2026-02-07T14:19:46.422285" elapsed="2.427941"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Webpage Testcases" id="s1" pass="1" fail="0" skip="0">Webpage Testcases</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
