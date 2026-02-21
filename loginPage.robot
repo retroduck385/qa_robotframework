@@ -37,3 +37,7 @@ Submit credentials
 Welcome page should be open 
     Location should be      ${WELCOME URL}
     Title should be     Welcome Page
+
+Error Page Should Be Open
+    Location Should Be    ${ERROR URL}
+    Title Should Be       Error Page

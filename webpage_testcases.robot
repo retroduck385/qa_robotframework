@@ -11,3 +11,10 @@ Valid Login
     Welcome Page Should Be Open
     [Teardown]      Close Browser
     
+Invalid Login
+    Open Browser to Login Page
+    Input Username    invalid_user
+    Input Password    wrong_password
+    Submit Credentials
+    Error Page Should Be Open
+    [Teardown]    Close Browser
